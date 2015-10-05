@@ -169,4 +169,10 @@ class Game
   end
 end
 
-game = Game.new.play
+#Main
+play_again = "y"
+while play_again == "y"
+  game = Game.new.play
+  puts "Do you want to play again (y, n)? "
+  play_again = gets.chomp.downcase  
+end
